@@ -1,0 +1,21 @@
+==============================================================================
+20260228 15:52:03.941 - INFO - + START SUITE: Flow 20260228 155203 [ ]
+==============================================================================
+20260228 15:52:03.941 - INFO - +- START TEST: 1231 [ ]
+------------------------------------------------------------------------------
+20260228 15:52:03.942 - INFO - +-- START KEYWORD: keywords.打开智能体网站 [ https://baijiahao.baidu.com/s?id=1858281896268798627&wfr=spider&for=pc | ${BROWSER} ]
+20260228 15:52:03.942 - INFO - +--- START KEYWORD: SeleniumLibrary.Open Browser [ ${url} | ${browser} ]
+20260228 15:52:06.473 - INFO - +--- END KEYWORD: SeleniumLibrary.Open Browser (2531)
+20260228 15:52:06.473 - INFO - +--- START KEYWORD: SeleniumLibrary.Maximize Browser Window [ ]
+20260228 15:52:06.506 - INFO - +--- END KEYWORD: SeleniumLibrary.Maximize Browser Window (33)
+20260228 15:52:06.506 - INFO - +--- START KEYWORD: SeleniumLibrary.Set Selenium Timeout [ ${TIMEOUT} ]
+20260228 15:52:06.509 - INFO - +--- END KEYWORD: SeleniumLibrary.Set Selenium Timeout (3)
+20260228 15:52:06.509 - INFO - +-- END KEYWORD: keywords.打开智能体网站 (2567)
+------------------------------------------------------------------------------
+20260228 15:52:06.509 - INFO - +- END TEST: 1231 (2568)
+------------------------------------------------------------------------------
+20260228 15:52:06.509 - INFO - +- START TEARDOWN: SeleniumLibrary.Close All Browsers [ ]
+20260228 15:52:12.699 - INFO - +- END TEARDOWN: SeleniumLibrary.Close All Browsers (6190)
+==============================================================================
+20260228 15:52:12.700 - INFO - + END SUITE: Flow 20260228 155203 (9022)
+==============================================================================

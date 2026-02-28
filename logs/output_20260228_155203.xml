@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.12 on win32)" generated="20260228 15:52:03.675" rpa="false" schemaversion="4">
+<suite id="s1" name="Flow 20260228 155203" source="D:\namespace\python-namespace\Win-Rpa\logs\flow_20260228_155203.robot">
+<test id="s1-t1" name="1231" line="11">
+<kw name="打开智能体网站" library="keywords">
+<arg>https://baijiahao.baidu.com/s?id=1858281896268798627&amp;wfr=spider&amp;for=pc</arg>
+<arg>${BROWSER}</arg>
+<doc>打开指定的智能体网站</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" starttime="20260228 15:52:03.942" endtime="20260228 15:52:06.473"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20260228 15:52:06.473" endtime="20260228 15:52:06.506"/>
+</kw>
+<kw name="Set Selenium Timeout" library="SeleniumLibrary">
+<arg>${TIMEOUT}</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" starttime="20260228 15:52:06.506" endtime="20260228 15:52:06.509"/>
+</kw>
+<status status="PASS" starttime="20260228 15:52:03.942" endtime="20260228 15:52:06.509"/>
+</kw>
+<doc>自动化执行流程</doc>
+<status status="PASS" starttime="20260228 15:52:03.941" endtime="20260228 15:52:06.509"/>
+</test>
+<kw name="Close All Browsers" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20260228 15:52:06.509" endtime="20260228 15:52:12.699"/>
+</kw>
+<doc>1231</doc>
+<status status="PASS" starttime="20260228 15:52:03.677" endtime="20260228 15:52:12.699"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Flow 20260228 155203">Flow 20260228 155203</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

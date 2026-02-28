@@ -1,0 +1,53 @@
+{
+  "flow_name": "智能体网站自动化示例",
+  "description": "演示如何操作智能体网站，包括点击按钮和数据提取功能",
+  "browser": "chrome",
+  "steps": [
+    {
+      "action": "open_browser",
+      "url": "http://localhost:8000"
+    },
+    {
+      "action": "wait",
+      "seconds": "2"
+    },
+    {
+      "action": "input_text",
+      "locator": "id=username",
+      "text": "admin"
+    },
+    {
+      "action": "input_text",
+      "locator": "id=password",
+      "text": "password123"
+    },
+    {
+      "action": "click",
+      "locator": "xpath=//button[@type='submit']"
+    },
+    {
+      "action": "wait_until_element_visible",
+      "locator": "id=dashboard",
+      "timeout": "10s"
+    },
+    {
+      "action": "click",
+      "locator": "id=data-button"
+    },
+    {
+      "action": "wait",
+      "seconds": "3"
+    },
+    {
+      "action": "get_text",
+      "locator": "xpath=//div[@class='result-data']"
+    },
+    {
+      "action": "screenshot",
+      "filename": "result_screenshot"
+    },
+    {
+      "action": "close_browser"
+    }
+  ]
+}

@@ -1,3 +1,6 @@
+
+logs/**
+
 # --- Python 编译文件 (Bytecode) ---
 __pycache__/
 *.py[cod]
