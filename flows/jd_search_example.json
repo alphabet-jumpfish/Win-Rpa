@@ -1,0 +1,32 @@
+{
+  "flow_name": "京东搜索示例",
+  "description": "演示如何使用搜索操作在京东网站上搜索商品",
+  "browser": "chrome",
+  "steps": [
+    {
+      "action": "open_browser",
+      "url": "https://re.m.jd.com/page/homelike?ad_od=3&traffic_source=1004&re_dcp=202m0QjIIg==&bd_vid=nHcknHb4n1fvrjDLrjR1nHm3rHFxnWcdg17xnH0s&cu=true&utm_source=baidu-search&utm_medium=cpc&utm_campaign=t_262767352_baidusearch&utm_term=9603741117_0_e3ecd53ab3474ca98aed69f06194d6ec"
+    },
+    {
+      "action": "wait",
+      "seconds": "2"
+    },
+    {
+      "action": "search",
+      "search_box_locator": "id=key",
+      "search_text": "休闲零食",
+      "search_button_locator": "xpath=//button[@class='button' and contains(text(),'搜索')]|//button[contains(@class,'search-btn')]"
+    },
+    {
+      "action": "wait",
+      "seconds": "3"
+    },
+    {
+      "action": "screenshot",
+      "filename": "jd_search_result"
+    },
+    {
+      "action": "close_browser"
+    }
+  ]
+}

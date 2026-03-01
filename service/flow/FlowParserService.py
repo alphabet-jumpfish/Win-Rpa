@@ -26,6 +26,7 @@ class FlowParserService:
         'scroll_to_element',         # 滚动到元素
         'select_from_list',          # 下拉选择
         'execute_javascript',        # 执行JS
+        'search',                    # 搜索操作（输入关键词并点击搜索）
     ]
 
     def __init__(self):
@@ -152,6 +153,7 @@ class FlowParserService:
             'screenshot': ['filename'],
             'scroll_to_element': ['locator'],
             'select_from_list': ['locator', 'value'],
+            'search': ['search_box_locator', 'search_text', 'search_button_locator'],
         }
 
         if action in required_params:

@@ -142,3 +142,10 @@ ${SCREENSHOT_DIR}    ${CURDIR}/../logs/screenshots
     Close Window
     ${handles}=    Get Window Handles
     Switch Window    ${handles}[0]
+
+执行搜索
+    [Arguments]    ${search_box_locator}    ${search_text}    ${search_button_locator}    ${timeout}=${TIMEOUT}
+    [Documentation]    在搜索框中输入文本并点击搜索按钮
+    智能输入文本    ${search_box_locator}    ${search_text}
+    安全点击元素    ${search_button_locator}    ${timeout}
+    Log    已执行搜索: ${search_text}

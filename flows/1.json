@@ -1,11 +1,6 @@
 {
-  "flow_name": "1231",
-  "description": "1231",
+  "flow_name": "测试流程",
+  "description": "测试流程",
   "browser": "chrome",
-  "steps": [
-    {
-      "action": "open_browser",
-      "url": "https://baijiahao.baidu.com/s?id=1858281896268798627&wfr=spider&for=pc"
-    }
-  ]
+  "steps": []
 }

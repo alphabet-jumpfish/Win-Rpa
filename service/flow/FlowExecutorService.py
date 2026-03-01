@@ -151,6 +151,7 @@ class FlowExecutorService:
             'scroll_to_element': lambda s: f"滚动到元素位置    {s['locator']}",
             'select_from_list': lambda s: f"从下拉框选择    {s['locator']}    {s['value']}",
             'execute_javascript': lambda s: f"执行JavaScript并获取结果    {s['script']}",
+            'search': lambda s: f"执行搜索    {s['search_box_locator']}    {s['search_text']}    {s['search_button_locator']}",
         }
 
         if action in action_mapping:
